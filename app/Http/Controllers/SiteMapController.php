@@ -8,6 +8,6 @@ class SiteMapController extends Controller
 {
     public function index()
     {
-        return view('sitemap');
+        return response()->view('sitemap', [])->header('Content-Type', 'text/xml');
     }
 }
