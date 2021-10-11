@@ -16,7 +16,7 @@ use App\Http\Controllers\SiteMapController;
 |
 */
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/sitemap', [SiteMapController::class, 'index']);
+Route::get('/sitemap.xml', [SiteMapController::class, 'index']);
 Route::get('/{urlId}', [LinkController::class, 'redirectUrl']);
 
 
