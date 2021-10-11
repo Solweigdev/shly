@@ -1,5 +1,7 @@
 @extends("layout.default")
 @section('title', 'Shorten URL')
+@section('description', 'it is a free tool to shorten a URL or reduce a link')
+@section('image', 'https://zupimages.net/up/21/41/g9re.png')
 
 @section('content')
     <div id="home" class="ui container">
