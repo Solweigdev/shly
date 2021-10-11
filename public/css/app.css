@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@font-face {
+  src: url(/fonts/PoetsenOne-Regular.ttf?9a553614c0458410b697b72a6b9d24ff);
+  font-family: "poetsen-One";
+}
+body {
+  height: 100vh;
+  background-color: #11142C;
+  font-family: "Roboto", sans-serif;
+}
+
+/******** NAVBAR ********/
+#navbar {
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.09);
+}
+
+#navbar .logo {
+  text-transform: uppercase;
+  font-family: "poetsen-One", sans-serif;
+  color: #F28705;
+  font-size: x-large;
+}
+
+/******** HOME ********/
+#home .title {
+  text-transform: uppercase;
+  font-family: "poetsen-One", sans-serif;
+  color: #F28705;
+  font-size: 80px;
+  text-align: center;
+}
+
+#home .sub-title {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+/******** LinkForm ********/
+#link-form {
+  margin: 100px 0;
+}
+
+#link-form label {
+  color: white;
+  font-size: 22px !important;
+}
+
+#link-form input {
+  background: rgba(216, 221, 229, 0.1);
+  border-radius: 10px;
+  padding: 20px 15px;
+  color: white;
+  font-size: 16px;
+  font-family: "poetsen-One", sans-serif;
+}
+
+#link-form .hr {
+  margin: 40px auto;
+  width: 50%;
+  border-color: white;
+}
+
+#link-form .result-link {
+  position: relative;
+}
+
+#link-form .result-link_label {
+  position: absolute;
+  top: 8px;
+  right: 110px;
+}
+
+#link-form .result-link_content {
+  background-color: #F28705;
+  width: 50%;
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+#link-form .result-link_content_title {
+  color: white;
+  font-family: "poetsen-One", sans-serif;
+  font-size: 20px;
+}
+
+.ui.form .error.message {
+  display: block;
+}
+
+#link-form input:focus {
+  border-color: #F28705;
+}
+
+#link-form button {
+  background: #F28705;
+  color: white;
+  font-size: 18px;
+}
+
+#app {
+  height: 100vh;
+}
+
+#my-container {
+  height: 100vh;
+  width: 100%;
+}
+
+#link-form label {
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
