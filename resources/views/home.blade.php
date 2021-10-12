@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="column">
                     <h1 class="title">shly.io</h1>
-                    <h2 class="sub-title">it is a free tool to shorten a URL or reduce a link</h2>
+                    <h2 class="sub-title">A free tool to shorten a URL or reduce a link</h2>
                     <div id="linkForm">
                 </div>
             </div>
