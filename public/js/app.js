@@ -10997,7 +10997,7 @@ function LinkForm() {
             case 7:
               _context.prev = 7;
               _context.t0 = _context["catch"](0);
-              console.log('e', _context.t0);
+              console.error('e', _context.t0);
 
             case 10:
             case "end":
@@ -11056,28 +11056,28 @@ function LinkForm() {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
               "class": "result-link_media_btn",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_share__WEBPACK_IMPORTED_MODULE_8__["default"], {
-                url: dataLink.original,
+                url: dataLink["short"],
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_share__WEBPACK_IMPORTED_MODULE_9__["default"], {
                   size: "3rem"
                 })
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_share__WEBPACK_IMPORTED_MODULE_10__["default"], {
                 appId: "276294581039920",
-                url: dataLink.original,
+                url: dataLink["short"],
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_share__WEBPACK_IMPORTED_MODULE_11__["default"], {
                   size: "3rem"
                 })
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_share__WEBPACK_IMPORTED_MODULE_12__["default"], {
-                url: dataLink.original,
+                url: dataLink["short"],
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_share__WEBPACK_IMPORTED_MODULE_13__["default"], {
                   size: "3rem"
                 })
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_share__WEBPACK_IMPORTED_MODULE_14__["default"], {
-                url: dataLink.original,
+                url: dataLink["short"],
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_share__WEBPACK_IMPORTED_MODULE_15__["default"], {
                   size: "3rem"
                 })
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_share__WEBPACK_IMPORTED_MODULE_16__["default"], {
-                url: dataLink.original,
+                url: dataLink["short"],
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_share__WEBPACK_IMPORTED_MODULE_17__["default"], {
                   size: "3rem"
                 })
