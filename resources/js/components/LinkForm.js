@@ -86,19 +86,19 @@ export default function LinkForm () {
                                <button className="ui button" type="submit" onClick={handleCopy}>Copy Url</button>
                            </div>
                            <div class="result-link_media_btn">
-                               <FacebookShareButton url={dataLink.original}>
+                               <FacebookShareButton url={dataLink.short}>
                                    <FacebookIcon size={"3rem"}/>
                                </FacebookShareButton>
-                               <FacebookMessengerShareButton appId={"276294581039920"}  url={dataLink.original}>
+                               <FacebookMessengerShareButton appId={"276294581039920"}  url={dataLink.short}>
                                    <FacebookMessengerIcon size={"3rem"} />
                                </FacebookMessengerShareButton>
-                               <TwitterShareButton url={dataLink.original}>
+                               <TwitterShareButton url={dataLink.short}>
                                    <TwitterIcon size={"3rem"} />
                                </TwitterShareButton>
-                               <LinkedinShareButton url={dataLink.original}>
+                               <LinkedinShareButton url={dataLink.short}>
                                    <LinkedinIcon size={"3rem"} />
                                </LinkedinShareButton>
-                               <RedditShareButton url={dataLink.original}>
+                               <RedditShareButton url={dataLink.short}>
                                    <RedditIcon size={"3rem"} />
                                </RedditShareButton>
                            </div>
