@@ -2,8 +2,42 @@ import React, {useEffect, useState} from "react";
 import ReactDom                     from "react-dom";
 import {useForm}                    from "react-hook-form";
 import {yupResolver}                from '@hookform/resolvers/yup';
-import * as yup         from "yup";
-import {toast, Toaster} from "react-hot-toast";
+import * as yup                     from "yup";
+import {toast, Toaster}             from "react-hot-toast";
+import {
+    EmailShareButton,
+    FacebookShareButton,
+    FacebookMessengerShareButton,
+    LinkedinShareButton,
+    RedditShareButton,
+    TelegramShareButton,
+    TwitterShareButton,
+    WhatsappShareButton,
+} from "react-share";
+import {
+    EmailIcon,
+    FacebookIcon,
+    FacebookMessengerIcon,
+    HatenaIcon,
+    InstapaperIcon,
+    LineIcon,
+    LinkedinIcon,
+    LivejournalIcon,
+    MailruIcon,
+    OKIcon,
+    PinterestIcon,
+    PocketIcon,
+    RedditIcon,
+    TelegramIcon,
+    TumblrIcon,
+    TwitterIcon,
+    ViberIcon,
+    VKIcon,
+    WeiboIcon,
+    WhatsappIcon,
+    WorkplaceIcon
+} from "react-share";
+
 
 const schema = yup.object().shape({url: yup.string().required()})
 
@@ -21,8 +55,12 @@ export default function LinkForm () {
             const response = await axios.post('/api/generate-url', data)
             setDataLink(response.data.link)
         } catch (e) {
-            console.log('e', e)
+            console.error('e', e)
         }
+    }
+
+    const handleOpenLink = () => {
+        window.open(dataLink.short, '_blank').focus();
     }
 
     const handleCopy = () => {
@@ -42,7 +80,32 @@ export default function LinkForm () {
                        <div className="ui left pointing label result-link_label">
                            Click to copy short link
                        </div>
+                       <div className="result-link_media">
+                           <div className="result-link_media_content">
+                               <button className="ui button result-link_media_btn-link" type="submit" onClick={handleOpenLink}>Visite Url</button>
+                               <button className="ui button" type="submit" onClick={handleCopy}>Copy Url</button>
+                           </div>
+                           <div class="result-link_media_btn">
+                               <FacebookShareButton url={dataLink.original}>
+                                   <FacebookIcon size={"3rem"}/>
+                               </FacebookShareButton>
+                               <FacebookMessengerShareButton appId={"276294581039920"}  url={dataLink.original}>
+                                   <FacebookMessengerIcon size={"3rem"} />
+                               </FacebookMessengerShareButton>
+                               <TwitterShareButton url={dataLink.original}>
+                                   <TwitterIcon size={"3rem"} />
+                               </TwitterShareButton>
+                               <LinkedinShareButton url={dataLink.original}>
+                                   <LinkedinIcon size={"3rem"} />
+                               </LinkedinShareButton>
+                               <RedditShareButton url={dataLink.original}>
+                                   <RedditIcon size={"3rem"} />
+                               </RedditShareButton>
+                           </div>
+                       </div>
+
                    </div>
+
                </>
            )
        }

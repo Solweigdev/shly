@@ -29,8 +29,12 @@
     },
     "dependencies": {
         "@hookform/resolvers": "^2.8.2",
+        "core-js": "^3.18.3",
         "react-hook-form": "^7.17.2",
         "react-hot-toast": "^2.1.1",
+        "react-share": "^4.4.0",
+        "react-share-social": "^0.1.48",
+        "vue-social-sharing": "^3.0.8",
         "yup": "^0.32.9"
     }
 }

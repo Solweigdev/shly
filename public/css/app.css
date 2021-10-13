@@ -28,7 +28,7 @@ body {
   text-transform: uppercase;
   font-family: "poetsen-One", sans-serif;
   color: #F28705;
-  font-size: 80px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -102,6 +102,22 @@ body {
   font-size: 18px;
 }
 
+#link-form .result-link_media {
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#link-form .result-link_media_btn {
+  display: flex;
+  gap: 5px;
+}
+
+#link-form .result-link_media_btn-link {
+  background-color: #24A054;
+}
+
 #app {
   height: 100vh;
 }
@@ -114,4 +130,31 @@ body {
 #link-form label {
   font-size: xx-large;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #link-form .result-link_content {
+    width: 100%;
+    margin: auto;
+  }
+
+  #link-form .result-link_label {
+    display: none;
+  }
+
+  #link-form .result-link_media {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #link-form .result-link_media_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #link-form .result-link_media_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
 }
